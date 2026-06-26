@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | default: site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      {% if site.description %}<p class="muted">{{ site.description }}</p>{% endif %}
+      <nav>
+        <a href="{{ site.baseurl }}/">Home</a> |
+        <a href="{{ site.baseurl }}/wordpress-seo/">WordPress SEO</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p class="muted">Built with GitHub Pages & Jekyll. Hosted at <a href="{{ site.url }}">{{ site.url }}</a></p>
+    </footer>
+  </div>
+</body>
+</html>
