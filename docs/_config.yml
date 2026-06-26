@@ -1,0 +1,8 @@
+title: joydo docs
+description: Documentation and example pages for joydo
+theme: minima
+url: "https://ajie78987-oss.github.io"
+baseurl: "/joydo"
+
+# Optional: plugins: [jekyll-seo-tag]
+# Note: If you host at https://ajie78987-oss.github.io/joydo/ keep baseurl: "/joydo"
